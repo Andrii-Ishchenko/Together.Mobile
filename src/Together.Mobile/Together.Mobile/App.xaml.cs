@@ -1,4 +1,5 @@
 ﻿using System;
+using Together.Mobile.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace Together.Mobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new RouteListPage();
         }
 
         protected override void OnStart()
