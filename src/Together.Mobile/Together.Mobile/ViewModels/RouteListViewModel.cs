@@ -12,7 +12,7 @@ namespace Together.Mobile.ViewModels
         public RouteListViewModel()
         {
             Routes = new List<RouteListItem>();
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 8; i++)
             {
                 Routes.Add(new RouteListItem()
                 {

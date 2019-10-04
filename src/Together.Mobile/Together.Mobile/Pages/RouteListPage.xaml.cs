@@ -25,5 +25,15 @@ namespace Together.Mobile.Pages
             
             DisplayAlert("Alert", $"'{listItem.Name}' Passengers:{listItem.PassengersCount}/{listItem.MaxPassengers}", "OK");
         }
+
+        private void RoutesList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e == null)
+            {
+                return;
+            }
+
+            ((ListView)sender).SelectedItem = null;
+        }
     }
 }
